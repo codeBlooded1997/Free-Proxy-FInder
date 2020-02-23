@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>HOME</title>
+{% endblock %}
+
+{% block body %}
+<h1>Complete the form to start scraping</h1>
+
+    <hr>
+    <h2>Target Website :    "freelancer.com"</h2>
+    <form>
+        Job Title: <input type="text" name="title" id="title">
+        <br>
+        Country/City: <input type="text" name="location" id="location">
+        <br>
+        <input type="submit" value="POST">
+    </form>
+    <hr>
+
+{% endblock %}
