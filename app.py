@@ -1,7 +1,4 @@
 from flask import Flask, render_template, request, send_from_directory
-import requests
-from bs4 import BeautifulSoup as bs
-import pandas as pd
 from scraper import *
 
 app = Flask(__name__) # creating app
