@@ -6,6 +6,7 @@
 
 {% block body %}
     <h4>Free Proxy List Scraper</h4>
+    <hr class="my-4">
     <table id="proxy-table" class="display table responsive text-left mt-4" style="width: 100%">
         <thead>
             <tr>
@@ -35,6 +36,7 @@
         </tbody>
     </table>
 
+    <a href="/download" class="btn btn-primary">Download</a>
     <script type="text/javascript">
         $(document).ready( function () {
             $('#proxy-table').DataTable();

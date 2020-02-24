@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, send_from_directory
 import requests
 from bs4 import BeautifulSoup as bs
 import pandas as pd
@@ -18,6 +18,9 @@ def results():
 
     return render_template('results.html', proxies=scraper.results)
 
+@app.route('/download')
+def doawnload():
+    return send_from_directory('', 'proxies.csv', as_attachment=True)
 if __name__ == "__main__":  # if we are running the app from command line(__main__)
     app.run(debug=True, threaded = True)  # it will turn on debug mode
 
