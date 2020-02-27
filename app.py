@@ -20,4 +20,3 @@ def doawnload():
     return send_from_directory('', 'proxies.csv', as_attachment=True)
 if __name__ == "__main__":  # if we are running the app from command line(__main__)
     app.run(debug=True, threaded = True)  # it will turn on debug mode
-
