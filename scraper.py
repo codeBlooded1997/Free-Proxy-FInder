@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from tabulate import *
+#from tabulate import *
 import csv
 
 class ProxyScraper:
