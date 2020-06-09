@@ -17,6 +17,7 @@ class ProxyScraper:
         results = [headers]
 
         for row in rows:
+            # Checking if there is any data avilable.
             if len(row.findAll('td')):
                 self.results.append([data.text for data in row.findAll('td')])
 
